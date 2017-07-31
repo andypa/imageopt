@@ -27,7 +27,8 @@ cache:
 
 before_install:
   - git clone --recursive https://github.com/pornel/pngquant.git
-  - cd pngquant && make && sudo make install
+  - cd pngquant && make
+  - sudo make install
   - composer self-update
   - composer --version
 
