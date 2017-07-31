@@ -18,14 +18,11 @@ addons:
       - pngquant
       - pngcrush
       - gifsicle
+      # jpgrescan and mozjpg
       - libjpeg-progs
       - libjpeg-turbo-progs
       - libperl6-slurp-perl
       - libfile-slurp-perl
-      #- imagemagick
-      #- imagemagick-common
-      #- libmagick++-dev
-      #- libmagick++4
 cache:
   directories:
     - $HOME/.composer/cache
