@@ -19,8 +19,6 @@ addons:
       - gifsicle
       - libjpeg-progs
 
-#jpegrescan
-
 cache:
   directories:
     - $HOME/.composer/cache

@@ -52,7 +52,7 @@ tx_imageopt {
             }
 
             jpegrescan {
-                enabled = 1
+                enabled = 0
                 executors {
                     10 {
                         enabled = 1
