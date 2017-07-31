@@ -1,4 +1,4 @@
-dist: stretch
+dist: xenial
 
 language: php
 
