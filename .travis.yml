@@ -9,16 +9,13 @@ matrix:
     - php: 5.6
       env: TYPO3_VERSION=^7.6
 
-install:
-  - sudo apt-get --yes install snapd
-  - sudo snap install pngquant
-
 addons:
   apt:
     packages:
       - parallel
       - jpegoptim
       - optipng
+      - pngquant
       - pngcrush
       - gifsicle
       - libjpeg-progs
