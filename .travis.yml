@@ -14,7 +14,12 @@ addons:
       - parallel
       - jpegoptim
       - optipng
+      - pngquant
+      - pngcrush
       - gifsicle
+      - libjpeg-progs
+
+#jpegrescan
 
 cache:
   directories:
