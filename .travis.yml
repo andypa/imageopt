@@ -1,3 +1,5 @@
+dist: stretch
+
 language: php
 
 matrix:
