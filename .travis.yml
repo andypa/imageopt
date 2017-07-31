@@ -19,13 +19,13 @@ addons:
       - pngcrush
       - gifsicle
       - libjpeg-progs
-      - imagemagick
-      - imagemagick-common
-      - libmagick++-dev
-      - libmagick++4
+      - libjpeg-turbo-progs
       - libperl6-slurp-perl
       - libfile-slurp-perl
-
+      #- imagemagick
+      #- imagemagick-common
+      #- libmagick++-dev
+      #- libmagick++4
 cache:
   directories:
     - $HOME/.composer/cache
