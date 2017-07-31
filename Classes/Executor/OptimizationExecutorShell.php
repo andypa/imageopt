@@ -97,7 +97,7 @@ class OptimizationExecutorShell implements OptimizationExecutorInterface
                 $executorResult->setErrorMessage('Can not read file to optimize:' . $inputImageAbsolutePath);
             }
         } else {
-            $executorResult->setErrorMessage('Variable "command" can not be found in executor configuration.');
+            $executorResult->setErrorMessage('Variable "command.exec" can not be found in executor configuration.');
         }
         return $executorResult;
     }

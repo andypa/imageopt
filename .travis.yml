@@ -12,7 +12,9 @@ addons:
   apt:
     packages:
       - parallel
-      - imageopt
+      - jpegoptim
+      - optipng
+      - gifsicle
 
 cache:
   directories:
