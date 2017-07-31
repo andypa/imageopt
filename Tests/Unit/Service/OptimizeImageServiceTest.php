@@ -58,6 +58,7 @@ class OptimizeImageServiceTest extends UnitTestCase
         if (is_readable($imageForTesting)) {
             /** @var OptimizationResult $optimizationResult */
             $optimizationResult = $optimizeImageService->optimize($imageForTesting);
+            echo '<pre>'; \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($optimizationResult, null, 8, 1); echo '</pre> 31.07.2017:14:14'; die();
             $this->assertEquals(true, $optimizationResult->getExecutedSuccessfully());
         } else {
             throw new Exception('Image for testing is not existing:' . $imageForTesting);
