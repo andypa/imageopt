@@ -31,8 +31,6 @@ cache:
     - $HOME/.composer/cache
 
 before_install:
-  - git clone https://github.com/kud/jpegrescan.git
-  - ln -s jpegrescan/jpegrescan /usr/local/bin/jpegrescan
   - composer self-update
   - composer --version
 
