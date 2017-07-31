@@ -9,22 +9,33 @@ matrix:
     - php: 5.6
       env: TYPO3_VERSION=^7.6
 
+install:
+  - sudo apt-get --yes install snapd
+  - sudo snap install pngquant
+
 addons:
   apt:
     packages:
       - parallel
       - jpegoptim
       - optipng
-      - pngquant
       - pngcrush
       - gifsicle
       - libjpeg-progs
+      - imagemagick
+      - imagemagick-common
+      - libmagick++-dev
+      - libmagick++4
+      - libperl6-slurp-perl
+      - libfile-slurp-perl
 
 cache:
   directories:
     - $HOME/.composer/cache
 
 before_install:
+  - git clone https://github.com/kud/jpegrescan.git
+  - ln -s jpegrescan/jpegrescan /usr/local/bin/jpegrescan
   - composer self-update
   - composer --version
 
